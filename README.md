@@ -66,6 +66,9 @@ Copia este bloque al final de tu `README.md` y complétalo:
 - Herramienta utilizada: Gemini (o «ninguna»)
 - Para qué la usé: Le pedi revisar la redaccion de mi codigo y que me ayudara a encontrar errores y me diera ideas.
 Tambien le pedi ayuda en corregir la redaccion de mis reflexiones.
+Ademas ayuda para el grafico 5 de la parte 2, a plantear la pregunta, y como podria llevarla a codigo.
+Recomendaciones para formar el codigo y conseguir los resultados para realizar una interpretacion exacta
+en la pregunta 3 parte 1.
 - Qué hice yo: Verifique que sus recomendaciones tuvieran sentido con lo que yo sabia, Y no haya modificado lo que yo ya habia planteado. 
 - Verificación: confirmo que entiendo y puedo explicar todo lo que entrego.
 ```
