@@ -183,14 +183,14 @@ ggsave("output/figuras/t4_p2_figura_compuesta.pdf", figura_compuesta, width = 14
 # 
 # 2. En el gráfico 3, ¿por qué elegiste ese geom y no otro?
 
-# R: Elegí geom_violin() junto con un stat_summary() que ayudara a marcar la mediana,
+# R: Elegí geom_violin() junto con un stat_summary() que ayuda a marcar la mediana,
 # porque con tantas observaciones un gráfico de puntos se vuelve una mancha ilegible y
 # un gráfico de cajas oculta la forma real de los datos. El violín permite ver la
-# distribución completa: muestra con claridad la concentración en la jornada completa
-# típica (en torno a las 42-45 horas) en ambos grupos y, al mismo tiempo, hace evidente
-# que las mujeres tienen una presencia mucho mayor en jornadas parciales bajo las 30
-# horas semanales. Así se aprecia directamente que, aunque ambos comparten la misma
-# mediana de 42 horas, la distribución hacia jornadas reducidas es muy distinta.
+# distribución completa, muestra con claridad la concentración en la jornada completa
+# típica (en torno a las 42-45 horas) en ambos grupos y, pero al mismo tiempo deja en 
+# evidencia que las mujeres se concentran mucho más en jornadas parciales bajo 
+# las 30 horas semanales. Con la barra en 42 horas se aprecia directo que, 
+# aunque ambos comparten la misma mediana, la distribución hacia abajo es muy distinta.
 # 
 # 3. ¿Qué agrega la figura compuesta que no dan los gráficos por separado?
 # R: La composición integra en una sola vista tres dimensiones estructurales del mercado 
@@ -205,8 +205,6 @@ ggsave("output/figuras/t4_p2_figura_compuesta.pdf", figura_compuesta, width = 14
 #   mostrando una distribución en "U" donde la vulnerabilidad se concentra en los extremos: 
 #   el ingreso de los jóvenes de 15 a 24 años (32,8 %) y la permanencia de los adultos mayores 
 #   de 65 años (56,2 %).
-# En conjunto, la lámina demuestra que la informalidad no responde a un patrón homogéneo, 
-# sino a la interacción simultánea de localización geográfica, género y etapa laboral.
 
 # AUDITORIA DEL CHECKLIST
 #
