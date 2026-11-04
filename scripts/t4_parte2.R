@@ -182,13 +182,15 @@ ggsave("output/figuras/t4_p2_figura_compuesta.pdf", figura_compuesta, width = 14
 #  estimar visualmente distancias en el eje.
 # 
 # 2. En el gráfico 3, ¿por qué elegiste ese geom y no otro?
-# R: Elegí geom_bin_2d() porque con más de 40.000 observaciones los puntos se amontonan 
-# formando una mancha ilegible; este geom agrupa en celdas y usa color para mostrar 
-# dónde se concentra la mayor parte de los ocupados. La diagonal (y = x) sirve como 
-# referencia directa para distinguir quiénes hicieron horas extra o subempleo.
-# Los ceros en horas efectivas corresponden a "ocupados ausentes temporales" según el 
-# Manual del INE: personas con empleo vigente que no trabajaron en la semana por 
-# vacaciones, licencias, permisos o huelga..
+
+# R: Elegí geom_violin() junto con un stat_summary() que ayudara a marcar la mediana,
+# porque con tantas observaciones un gráfico de puntos se vuelve una mancha ilegible y
+# un gráfico de cajas oculta la forma real de los datos. El violín permite ver la
+# distribución completa: muestra con claridad la concentración en la jornada completa
+# típica (en torno a las 42-45 horas) en ambos grupos y, al mismo tiempo, hace evidente
+# que las mujeres tienen una presencia mucho mayor en jornadas parciales bajo las 30
+# horas semanales. Así se aprecia directamente que, aunque ambos comparten la misma
+# mediana de 42 horas, la distribución hacia jornadas reducidas es muy distinta.
 # 
 # 3. ¿Qué agrega la figura compuesta que no dan los gráficos por separado?
 # R: La composición integra en una sola vista tres dimensiones estructurales del mercado 
@@ -196,8 +198,8 @@ ggsave("output/figuras/t4_p2_figura_compuesta.pdf", figura_compuesta, width = 14
 # - El Panel A cuantifica el rezago regional, situando a Ñuble como la segunda región con 
 #   mayor informalidad del país (34,5 %).
 # - El Panel B desagrega la dinámica interna por género, evidenciando que en 12 de las 
-#   16 regiones la precariedad afecta predominantemente a las mujeres (sobre la diagonal y = x), 
-#   mientras que en zonas del centro-sur como Ñuble y La Araucanía la informalidad masculina 
+#   16 regiones la precariedad afecta predominantemente a las mujeres , mientras que en 
+#   zonas del centro-sur como Ñuble y La Araucanía la informalidad masculina 
 #   alcanza o supera a la femenina.
 # - El Panel C complementa el panorama al identificar los grupos etarios más expuestos, 
 #   mostrando una distribución en "U" donde la vulnerabilidad se concentra en los extremos: 
